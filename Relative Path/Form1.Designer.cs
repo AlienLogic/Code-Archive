@@ -44,6 +44,7 @@
 			this.buttonPath2.TabIndex = 10;
 			this.buttonPath2.Text = "Path 2";
 			this.buttonPath2.UseVisualStyleBackColor = true;
+			this.buttonPath2.Click += new System.EventHandler(this.openPath);
 			// 
 			// buttonPath1
 			// 
@@ -54,6 +55,7 @@
 			this.buttonPath1.TabIndex = 11;
 			this.buttonPath1.Text = "Path 1";
 			this.buttonPath1.UseVisualStyleBackColor = true;
+			this.buttonPath1.Click += new System.EventHandler(this.openPath);
 			// 
 			// textBoxRelativePath
 			// 
@@ -73,6 +75,7 @@
 			this.textBoxPath2.Name = "textBoxPath2";
 			this.textBoxPath2.Size = new System.Drawing.Size(328, 20);
 			this.textBoxPath2.TabIndex = 8;
+			this.textBoxPath2.TextChanged += new System.EventHandler(this.textBox_textChanged);
 			// 
 			// textBoxPath1
 			// 
@@ -82,6 +85,7 @@
 			this.textBoxPath1.Name = "textBoxPath1";
 			this.textBoxPath1.Size = new System.Drawing.Size(328, 20);
 			this.textBoxPath1.TabIndex = 9;
+			this.textBoxPath1.TextChanged += new System.EventHandler(this.textBox_textChanged);
 			// 
 			// Form1
 			// 
@@ -93,8 +97,12 @@
 			this.Controls.Add(this.textBoxRelativePath);
 			this.Controls.Add(this.textBoxPath2);
 			this.Controls.Add(this.textBoxPath1);
+			this.MaximizeBox = false;
+			this.MaximumSize = new System.Drawing.Size(1200, 137);
+			this.MinimumSize = new System.Drawing.Size(300, 137);
 			this.Name = "Form1";
-			this.Text = "A";
+			this.ShowIcon = false;
+			this.Text = "Relative Path";
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
